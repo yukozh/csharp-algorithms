@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\Quic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{A3F84ECB-3583-440E-9257-BA77C30A077B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{DFEB27BA-3ADD-4924-A3FF-DF2614C5BE6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A3F84ECB-3583-440E-9257-BA77C30A077B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3F84ECB-3583-440E-9257-BA77C30A077B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3F84ECB-3583-440E-9257-BA77C30A077B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEB27BA-3ADD-4924-A3FF-DF2614C5BE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEB27BA-3ADD-4924-A3FF-DF2614C5BE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEB27BA-3ADD-4924-A3FF-DF2614C5BE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEB27BA-3ADD-4924-A3FF-DF2614C5BE6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
