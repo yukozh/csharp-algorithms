@@ -26,7 +26,7 @@ namespace InsertSort
                     if (nums[j] > nums[i])
                     {
                         var val = nums[i];
-                        for(var k = i;  k >=j; k--)
+                        for (var k = i; k > j; k--)
                         {
                             nums[k] = nums[k - 1];
                         }
