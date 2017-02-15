@@ -17,29 +17,29 @@ namespace RadixSort
 
         static IEnumerable<int> RadixSort(IEnumerable<int> nums)
         {
-            var bucket = new List<List<int>[]>();
+            var radix_total = new List<List<int>[]>();
             for(var i = 0; i < nums.Max().ToString().Length; i++)
             {
-                var radix = new List<int>[10];
+                var radix_inner = new List<int>[10];
                 for (var j = 0; j < 10; j++)
                 {
                     if (i == 0)
                     {
-                        radix[j] = nums.Where(x => x % 10 == j).ToList();
+                        radix_inner[j] = nums.Where(x => x % 10 == j).ToList();
                     }
                     else
                     {
-                        IEnumerable<int> last = bucket[i - 1][0];
+                        IEnumerable<int> last = radix_total[i - 1][0];
                         for (var k = 1; k < 10; k++)
                         {
-                            last = last.Concat(bucket[i - 1][k]);
+                            last = last.Concat(radix_total[i - 1][k]);
                         }
-                        radix[j] = last.Where(x => x / (10 * i) % 10 == j).ToList();
+                        radix_inner[j] = last.Where(x => x / (10 * i) % 10 == j).ToList();
                     }
                 }
-                bucket.Add(radix);
+                radix_total.Add(radix_inner);
             }
-            foreach(var x in bucket.Last())
+            foreach(var x in radix_total.Last())
             {
                 foreach(var y in x)
                 {
