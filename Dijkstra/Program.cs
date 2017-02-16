@@ -6,6 +6,7 @@ namespace Dijkstra
 {
     class Program
     {
+        const int Max = 10000;
         static void Main(string[] args)
         {
             var g = new int[][]
@@ -19,10 +20,10 @@ namespace Dijkstra
             };
 
             foreach (var x in Dijkstra(g, 0))
-                if (x < 10000)
+                if (x < Max)
                     Console.Write(x + " ");
                 else
-                    Console.Write("x ");
+                    Console.Write("X ");
             Console.Read();
         }
         
@@ -52,7 +53,7 @@ namespace Dijkstra
             // Loop
             do
             {
-                var di = tmp.Where(x => !x.IsVisited && x.Distance < 10000).OrderBy(x => x.Distance).FirstOrDefault();
+                var di = tmp.Where(x => !x.IsVisited && x.Distance < Max).OrderBy(x => x.Distance).FirstOrDefault();
                 if (di == null)
                     break;
                 pos = di.Index;
@@ -76,7 +77,7 @@ namespace Dijkstra
         class DijkstraInfo
         {
             public int Index { get; set; }
-            public int Distance { get; set; } = 10000;
+            public int Distance { get; set; } = Max;
             public int Path { get; set; } = -1;
             public bool IsVisited { get; set; } 
         }
