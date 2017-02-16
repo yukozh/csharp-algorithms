@@ -21,7 +21,11 @@ namespace Hash
             {
                 var pos = GetHash(x);
                 while (Store[pos] != 0)
-                    pos++;
+                {
+                    ++pos;
+                    if (pos >= Store.Length)
+                        pos = 0;
+                }
                 Store[pos] = x;
             }
         }
@@ -32,7 +36,11 @@ namespace Hash
         {
             var pos = GetHash(num);
             while (Store[pos] != num)
+            {
                 ++pos;
+                if (pos >= Store.Length)
+                    pos = 0;
+            }
             return pos;
         }
     }
