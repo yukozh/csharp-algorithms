@@ -39,13 +39,8 @@ namespace RadixSort
                 }
                 radix_total.Add(radix_inner);
             }
-            foreach(var x in radix_total.Last())
-            {
-                foreach(var y in x)
-                {
-                    yield return y;
-                }
-            }
+
+            return radix_total.Last().SelectMany(x => x);
         }
     }
 }
