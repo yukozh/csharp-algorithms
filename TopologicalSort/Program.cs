@@ -25,9 +25,23 @@ namespace TopologicalSort
             step1b.Nodes.AddLast(step5);
             step1c.Nodes.AddLast(step5);
             step1e.Nodes.AddLast(step5);
+            step4.Nodes.AddLast(step5);
             var graph = new Graph
             {
-                Nodes = new List<GraphNode> { step1a, step1b, step1c, step1d, step1e, step2, step3, step4, step5 }.OrderBy(x => Guid.NewGuid()).ToList()
+                Nodes = new List<GraphNode>
+                {
+                    step1a,
+                    step1b,
+                    step1c,
+                    step1d,
+                    step1e,
+                    step2,
+                    step3,
+                    step4,
+                    step5
+                }
+                .OrderBy(x => Guid.NewGuid())
+                .ToList()
             };
 
             // 拓扑排序
@@ -38,14 +52,15 @@ namespace TopologicalSort
 
         static IEnumerable<string> TopologicalSort(Graph g)
         {
-            while(g.Nodes.Count > 0)
+            var nodes = new List<GraphNode>(g.Nodes);
+            while(nodes.Count > 0)
             {
-                var in0 = g.Nodes.Where(x => !g.Nodes.Any(y => y.Nodes.Contains(x))).ToList();
+                var in0 = nodes.Where(x => nodes.All(y => !y.Nodes.Contains(x))).ToList();
                 foreach (var x in in0)
                 {
                     yield return x.Value;
-                    g.Nodes.Remove(x);
-                    g.Nodes.ForEach(y => y.Nodes.Remove(x));
+                    nodes.Remove(x);
+                    nodes.ForEach(y => y.Nodes.Remove(x));
                 }
             }
         }
