@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepFirstSearch", "DeepFirs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreadthFirstSearch", "BreadthFirstSearch\BreadthFirstSearch.csproj", "{334D9F23-DFEA-4440-9548-483739F3C3A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchTree", "SearchTree\SearchTree.csproj", "{836C6D7D-6050-4F43-B871-751A9E66FB4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{334D9F23-DFEA-4440-9548-483739F3C3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{334D9F23-DFEA-4440-9548-483739F3C3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{334D9F23-DFEA-4440-9548-483739F3C3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836C6D7D-6050-4F43-B871-751A9E66FB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836C6D7D-6050-4F43-B871-751A9E66FB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836C6D7D-6050-4F43-B871-751A9E66FB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836C6D7D-6050-4F43-B871-751A9E66FB4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,5 +140,6 @@ Global
 		{391C1901-B9EB-4452-A89C-B7D4D41914CD} = {4AAFE8F6-FE3F-4F57-8E4C-0F8FDB2B8582}
 		{B2AA89B5-A40F-4A52-A7DD-DE2FB75573F3} = {00552525-826A-4610-B0F4-C846F4AC1B3A}
 		{334D9F23-DFEA-4440-9548-483739F3C3A7} = {00552525-826A-4610-B0F4-C846F4AC1B3A}
+		{836C6D7D-6050-4F43-B871-751A9E66FB4C} = {39BD950F-C9BB-4CBF-AC91-593C223ABC8E}
 	EndGlobalSection
 EndGlobal
