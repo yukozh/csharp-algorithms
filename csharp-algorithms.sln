@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapSort", "HeapSort\HeapSo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitreeTraversal", "BitreeTraversal\BitreeTraversal.csproj", "{C97ADC42-B8DC-49C4-BC98-ABC135E17F38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopologicalSort", "TopologicalSort\TopologicalSort.csproj", "{FC1F8F0C-C25A-404F-9955-7145093342C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C97ADC42-B8DC-49C4-BC98-ABC135E17F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C97ADC42-B8DC-49C4-BC98-ABC135E17F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C97ADC42-B8DC-49C4-BC98-ABC135E17F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC1F8F0C-C25A-404F-9955-7145093342C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC1F8F0C-C25A-404F-9955-7145093342C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC1F8F0C-C25A-404F-9955-7145093342C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC1F8F0C-C25A-404F-9955-7145093342C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,5 +89,6 @@ Global
 		{1A7FA663-F5E6-4A2C-8A9B-8CBAF6F299AD} = {B16563C4-101C-4E33-AE19-02CEA0CF7C90}
 		{61FAF300-22B5-409D-8D45-FB5875155DB7} = {39BD950F-C9BB-4CBF-AC91-593C223ABC8E}
 		{C97ADC42-B8DC-49C4-BC98-ABC135E17F38} = {39BD950F-C9BB-4CBF-AC91-593C223ABC8E}
+		{FC1F8F0C-C25A-404F-9955-7145093342C0} = {00552525-826A-4610-B0F4-C846F4AC1B3A}
 	EndGlobalSection
 EndGlobal
