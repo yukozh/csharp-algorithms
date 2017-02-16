@@ -70,8 +70,7 @@ namespace Dijkstra
             while (--n != 0);
 
             // Output
-            foreach (var x in tmp)
-                yield return x.Distance;
+            return tmp.Select(x => x.Distance);
         }
 
         class DijkstraInfo
