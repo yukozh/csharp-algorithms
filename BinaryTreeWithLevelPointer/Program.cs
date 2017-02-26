@@ -135,7 +135,10 @@ namespace BinaryTreeWithLevelPointer
             // 调整LevelHead
             if (result.Item2)
             {
-                LevelHead[result.Item3] = n.Left;
+                if (LevelHead.Count == result.Item3)
+                    LevelHead.Add(n.Left);
+                else
+                    LevelHead[result.Item3] = n.Left;
             }
         }
 
@@ -154,7 +157,10 @@ namespace BinaryTreeWithLevelPointer
             // 调整LevelHead
             if (result.Item2)
             {
-                LevelHead[result.Item3] = n.Right;
+                if (LevelHead.Count == result.Item3)
+                    LevelHead.Add(n.Left);
+                else
+                    LevelHead[result.Item3] = n.Right;
             }
         }
     }
@@ -218,6 +224,7 @@ namespace BinaryTreeWithLevelPointer
             tree.InitLevelHead();
             tree.AppendRight(tree.Root.Left.Right.Left, 1);
             tree.AppendRight(tree.Root.Left.Right.Right, 2);
+            tree.AppendLeft(tree.Root.Left.Right.Right.Right, 99);
             foreach (var x in tree.LevelTraversal())
             {
                 Console.Write(x + " ");
