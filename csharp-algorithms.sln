@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchTree", "SearchTree\Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeWithLevelPointer", "BinaryTreeWithLevelPointer\BinaryTreeWithLevelPointer.csproj", "{D7B40FBC-0921-4C47-8231-180FAA49ECB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSubSets", "FindSubSets\FindSubSets.csproj", "{8EA3E7D8-E7D5-4247-8074-839942C08EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{D7B40FBC-0921-4C47-8231-180FAA49ECB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7B40FBC-0921-4C47-8231-180FAA49ECB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7B40FBC-0921-4C47-8231-180FAA49ECB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA3E7D8-E7D5-4247-8074-839942C08EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA3E7D8-E7D5-4247-8074-839942C08EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA3E7D8-E7D5-4247-8074-839942C08EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA3E7D8-E7D5-4247-8074-839942C08EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,5 +154,6 @@ Global
 		{334D9F23-DFEA-4440-9548-483739F3C3A7} = {00552525-826A-4610-B0F4-C846F4AC1B3A}
 		{836C6D7D-6050-4F43-B871-751A9E66FB4C} = {39BD950F-C9BB-4CBF-AC91-593C223ABC8E}
 		{D7B40FBC-0921-4C47-8231-180FAA49ECB0} = {39BD950F-C9BB-4CBF-AC91-593C223ABC8E}
+		{8EA3E7D8-E7D5-4247-8074-839942C08EF7} = {4AAFE8F6-FE3F-4F57-8E4C-0F8FDB2B8582}
 	EndGlobalSection
 EndGlobal
