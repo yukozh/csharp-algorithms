@@ -29,8 +29,8 @@ namespace MergeSort
         {
             while(a.Count() + b.Count() > 0)
             {
-                var min1 = a.Count() > 0 ? a.First() : 2147483647;
-                var min2 = b.Count() > 0 ? b.First() : 2147483647;
+                var min1 = a.Count() > 0 ? a.First() : int.MaxValue;
+                var min2 = b.Count() > 0 ? b.First() : int.MaxValue;
                 if (min1 < min2)
                 {
                     a = a.Skip(1);
