@@ -6,7 +6,7 @@ namespace Dijkstra
 {
     class Program
     {
-        const int Max = 10000;
+        const int Max = int.MaxValue;
         static void Main(string[] args)
         {
             var g = new int[][]
@@ -20,10 +20,9 @@ namespace Dijkstra
             };
 
             foreach (var x in Dijkstra(g, 0))
-                if (x < Max)
-                    Console.Write(x + " ");
-                else
-                    Console.Write("X ");
+            {
+                Console.Write(x < Max ? (x + " ") : "X ");
+            }
             Console.Read();
         }
         
