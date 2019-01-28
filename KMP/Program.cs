@@ -11,7 +11,12 @@ namespace KMP
         static void BuildTable(string sub, out int[] table)
         {
             table = new int[sub.Length];
-            if (string.IsNullOrWhiteSpace(sub)) return;
+
+            if (string.IsNullOrWhiteSpace(sub))
+            {
+                return;
+            }
+
             for (int i = 1; i < sub.Length; ++i)
             {
                 // 取前缀
