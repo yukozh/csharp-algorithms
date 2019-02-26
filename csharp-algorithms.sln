@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberTriangle", "NumberTri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budget", "Budget\Budget.csproj", "{AF6AB81C-86C6-4F52-9581-A336D1C8D194}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalancedBitree", "BalancedBitree\BalancedBitree.csproj", "{60CBC24E-79D3-4D89-A783-CE2F528213E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{AF6AB81C-86C6-4F52-9581-A336D1C8D194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF6AB81C-86C6-4F52-9581-A336D1C8D194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF6AB81C-86C6-4F52-9581-A336D1C8D194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CBC24E-79D3-4D89-A783-CE2F528213E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CBC24E-79D3-4D89-A783-CE2F528213E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CBC24E-79D3-4D89-A783-CE2F528213E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CBC24E-79D3-4D89-A783-CE2F528213E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +177,7 @@ Global
 		{8669A110-EBDD-46F1-BB0C-AF4120299451} = {9617CCC8-64DE-495E-9D04-D19ECE97F771}
 		{484934FE-8672-4E66-8E99-4D296F49A040} = {9617CCC8-64DE-495E-9D04-D19ECE97F771}
 		{AF6AB81C-86C6-4F52-9581-A336D1C8D194} = {9617CCC8-64DE-495E-9D04-D19ECE97F771}
+		{60CBC24E-79D3-4D89-A783-CE2F528213E5} = {39BD950F-C9BB-4CBF-AC91-593C223ABC8E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A98EADC-974F-4E8C-B98C-EF60EDEF1F6D}
