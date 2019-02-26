@@ -283,15 +283,25 @@ namespace AvlTree
 
         static AvlNode TestMixed()
         {
-            var root = new AvlNode { Value = 4 };
-            Add(root, 5);
-            Add(root, 6);
-            Add(root, 1);
-            Add(root, 2);
-            Add(root, 3);
+            var root = new AvlNode { Value = 10 };
+            Add(root, 11);
+            Add(root, 12);
+            Add(root, 13);
+            Add(root, 14);
+            Add(root, 15);
             Add(root, 7);
             Add(root, 8);
             Add(root, 9);
+            Add(root, 6);
+            Add(root, 5);
+            Add(root, 4);
+            Add(root, 2);
+            Add(root, 3);
+            Add(root, 1);
+            Add(root, 17);
+            Add(root, 16);
+            Add(root, 19);
+            Add(root, 18);
             return root;
         }
 
