@@ -166,26 +166,30 @@ namespace AvlTree
 
         static void Modify(AvlNode node)
         {
-            if (Math.Abs(node.Parent?.Parent?.Factor ?? 0) < 2)
+            if (node == null)
             {
                 return;
             }
 
-            if (node.IsLeftChild && node.Parent.IsLeftChild)
+            if (Math.Abs(node.Parent?.Parent?.Factor ?? 0) > 1)
             {
-                ModifyLL(node.Parent.Parent);
-            }
-            else if (node.IsRightChild && (node.Parent?.IsRightChild ?? false))
-            {
-                ModifyRR(node.Parent.Parent);
-            }
-            else if ((node?.Parent?.IsLeftChild ?? false) && node.IsRightChild)
-            {
-                ModifyLR(node.Parent.Parent);
-            }
-            else
-            {
-                ModifyRL(node.Parent.Parent);
+
+                if (node.IsLeftChild && node.Parent.IsLeftChild)
+                {
+                    ModifyLL(node.Parent.Parent);
+                }
+                else if (node.IsRightChild && (node.Parent?.IsRightChild ?? false))
+                {
+                    ModifyRR(node.Parent.Parent);
+                }
+                else if ((node?.Parent?.IsLeftChild ?? false) && node.IsRightChild)
+                {
+                    ModifyLR(node.Parent.Parent);
+                }
+                else
+                {
+                    ModifyRL(node.Parent.Parent);
+                }
             }
 
             Modify(node.Parent);
@@ -215,11 +219,7 @@ namespace AvlTree
                 {
                     node.Right = newNode;
                     MaintainHeightAfterInsert(newNode);
-
-                    if (Math.Abs(parent?.Factor ?? 0) > 1)
-                    {
-                        Modify(newNode);
-                    }
+                    Modify(newNode);
                 }
                 else
                 {
@@ -232,11 +232,7 @@ namespace AvlTree
                 {
                     node.Left = newNode;
                     MaintainHeightAfterInsert(newNode);
-
-                    if (Math.Abs(parent?.Factor ?? 0) > 1)
-                    {
-                        Modify(newNode);
-                    }
+                    Modify(newNode);
                 }
                 else
                 {
